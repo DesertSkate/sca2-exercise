@@ -2,10 +2,17 @@
 // Write code that first gets a user via a getUser() call, then in the callback,
 // flips a coin and tells the user whether or not their guess was correct
 
-const coinToss = (guess, callback) => {
+const coinToss = (guess) => {
   const result = Math.round(Math.random());
   const didWin = guess === result;
-  callback(didWin);
+
+  if (didWin) {
+    console.log("The user was correct, it was " + result)
+    return true
+  } else {
+    console.log("The user was incorrect, they said it was " +  guess + ", but it was actually " + result)
+    return false
+  }
 };
 
 const getUser = callback => {
@@ -14,5 +21,7 @@ const getUser = callback => {
     lastName: "Doe",
     guess: Math.round(Math.random())
   };
-  callback(user);
+  callback(user.guess);
 };
+
+getUser(coinToss)

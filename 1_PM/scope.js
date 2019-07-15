@@ -9,16 +9,16 @@
 // - modify so that it prints 1, 2, 2 in that order. Console.logs must stay in place.
 
 function x() {
-  var a;
+  let a;
   console.log(a);
 }
 
 function y() {
-  var a = 2;
+  let a = 2;
   console.log(a);
-  x();
+  console.log(a)
 }
 
-var a = 1;
+let a = 1;
 console.log(a);
 y();
