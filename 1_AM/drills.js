@@ -4,20 +4,17 @@ const assert = require("assert");
 
 const tokenize = str => {
   // function which converts a multi-word string into an array of words
-  let strArray = []
-  for(let i = 0; i < str.length; i++) {
-    strArray.push(str[i])
-  }
+  let strArray = str.split(" ")
+
   return strArray
 };
 
 const reverse = str => {
   // function which reverses the string
-  let reverseArray = []
-  for (i = 0; i < str.length; i++) {
-    reverseArray.push(str[i])
-  }
+  let reverseArray = str.split("")
+
   reverseArray.reverse()
+
   return reverseArray.join("")
 };
 
@@ -122,7 +119,7 @@ const announceDate = () => {
 };
 
 // Write tests here:
-console.log(tokenize("dog"))
+console.log(tokenize("dog hog"))
 console.log(reverse("dog"))
 console.log(factorial(10))
 console.log(uniqueOnes(["Dog", "Cat", "Dog", "Cat", "Dog", "Gorilla"]))
