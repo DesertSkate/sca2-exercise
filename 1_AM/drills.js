@@ -147,7 +147,7 @@ assert(1 < 2);
 assert(1 + 2 === 3);
 assert([2, 3][0] === 2);
 assert(tokenize("dog"))
-assert(reverse("dog"))
+assert(reverse("factorial"))
 assert(factorial(8))
 assert(uniqueOnes(["Dog", "Cat", "Dog", "Cat", "Dog", "Gorilla"]))
 assert(zip([1, 2, 3, 5, 2], [3, 2, 1, 8, 9]))
