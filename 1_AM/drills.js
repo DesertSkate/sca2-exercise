@@ -103,22 +103,10 @@ const unzip = arr => {
 const shiftRight = (str, num) => {
   // TODO - write a function which shifts a string `num` characters to the right
   // Example = shiftThree("Hello") === "lloHe"
-  let stringArray = []
-
-  for (i = 0; i < str.length; i++) {
-    stringArray.push(str[i])
-  }
-
-  let index = 0
+  let stringArray = str.split("")
 
   for (i = 0; i < num; i++) {
-
-    stringArray.push(stringArray[index])
-    stringArray.shift()
-
-    if (index == num || index > num) {
-      break
-    }
+    stringArray.push(stringArray.shift())
   }
 
   let returnString = stringArray.join("")
@@ -126,7 +114,7 @@ const shiftRight = (str, num) => {
 };
 
 const announceDate = () => {
-  // TODO - write a function which returns the current date in the following format:
+  // Function which returns the current date in the following format:
   // "Today's date is January 7th, 2016. It is eleven thirty-seven in the morning."
   let date = new Date()
   
@@ -138,7 +126,7 @@ console.log(tokenize("dog"))
 console.log(reverse("dog"))
 console.log(factorial(10))
 console.log(uniqueOnes(["Dog", "Cat", "Dog", "Cat", "Dog", "Gorilla"]))
-console.log(zip([1, 2, 3, 5, 2], [3, 2, 1, 8, 9]))
+console.log(zip([1, 2, 3, 5, 2, 10], [3, 2, 1, 8, 9, 10]))
 console.log(unzip([ [ 1, 2 ], [ 3, 5 ], [ 2, 3 ], [ 2, 1 ], [ 8, 9 ] ]))
 console.log(shiftRight("Academies", 4))
 console.log(announceDate())
