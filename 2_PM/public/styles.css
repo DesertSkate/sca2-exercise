@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     z-index: 1;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .navFlexBar {
@@ -55,6 +57,11 @@
     color: white
 }
 
+#contentDiv img {
+    width: 30vw;
+    height: 30vw;
+}
+
 #contentDiv a:link {
     color: darkred;
     background-color: black;
@@ -78,7 +85,7 @@
 }
 
 #Mainback[name=back] {
-    height: 93vh !important ;
+    height: 150vh !important ;
 }
 
 h3[name=FlexRight] {
