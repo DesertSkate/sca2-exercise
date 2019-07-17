@@ -1,10 +1,10 @@
-import React from "react";
-import { Container, Text } from "./styles";
+import React from "react"
+import { Container, Text } from "./styles"
 
 const Welcome = () => (
   <Container>
-    <Text>DEV Winter Bootcamp React Starter!</Text>
+    <Text>SCA 2 Web Starter!</Text>
   </Container>
-);
+)
 
-export default Welcome;
+export default Welcome
