@@ -2,7 +2,7 @@ import WebFont from "webfontloader";
 
 WebFont.load({
   google: {
-    families: ["Source Sans Pro:400", "sans-serif"]
+    families: ["Source Sans Pro:400", "sans-serif", "Roboto"]
   }
 });
 

@@ -1,11 +1,17 @@
 import React, { Component } from "react"
 import Welcome from "../../components/Welcome"
+import StateForm from "../../components/PseudoForm"
 
-class Home extends Component {
+class Form extends Component {
   render() {
     // Currently, this only renders the welcome component. Create a form, and various form components and place them here
-    return <Welcome />
+    return (
+      <div>
+        <Welcome />
+        <StateForm />
+      </div>
+    )
   }
 }
 
-export default Home
+export default Form

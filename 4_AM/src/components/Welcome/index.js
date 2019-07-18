@@ -3,7 +3,7 @@ import { Container, Text } from "./styles"
 
 const Welcome = () => (
   <Container>
-    <Text>SCA 2 Web Starter!</Text>
+    <Text>Information</Text>
   </Container>
 )
 
