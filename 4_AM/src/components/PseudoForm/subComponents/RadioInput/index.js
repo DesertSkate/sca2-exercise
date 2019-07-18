@@ -1,11 +1,11 @@
 import React from "react"
-import {Radio, Option} from "./styles"
+import {Radio, Option, Container} from "./styles"
 
 const RadioButton = (props) => (
-    <div>
+    <Container>
         {props.top ? (<h2>Choose your gender: </h2>) : ""}
         <Radio type="radio" name={props.name} value={props.value} onChange={props.onChange} checked={props.checked} top={props.top}/><Option>{props.option}</Option>
-    </div>
+    </Container>
 )
 
 export default RadioButton

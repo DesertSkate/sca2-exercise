@@ -10,7 +10,7 @@ export const Text = styled(Flex)`
 
 export const Container = styled(Flex)`
   background-color: ${({ theme }) => theme.colors.devLogo};
-  height: 15em;
+  height: 15vh;
   width: 100%;
   align-items: center;
   justify-content: center;

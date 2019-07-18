@@ -9,4 +9,5 @@ export const TriPut = styles(TextInput) `
 export const TriContain = styles(Flex) `
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
 `
